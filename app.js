@@ -9,11 +9,12 @@ const bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 //nodemailer
+ 
 const transporter = nodemailer.createTransport({
     service:"gmail",
     auth:{
-        user:process.env.email,
-        pass:process.env.pass,
+        user:process.env.Email_Ambit,
+        pass:process.env.Pass_Ambit,
     }
 })
 
