@@ -34,7 +34,8 @@ app.post('/',(req,res)=>{
         to:req.body.email,
         subject:'Venha Participar worldAmbit',
         text:`entre nesse link para participar do nosso grupo do
-        discord: https://discord.gg/7UFHVPA `
+        discord: https://discord.gg/7UFHVPA 
+        em breve teremos muito mais....`
         
     };
     transporter.sendMail(mailOptions, function(error, info){
@@ -48,7 +49,7 @@ app.post('/',(req,res)=>{
 })
 
 //Config Server
-const PORT = 3003
+const PORT = process.env.PORT || 3003
 app.listen(PORT,()=>{
     console.log('entrou')
 })
