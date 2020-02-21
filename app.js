@@ -33,10 +33,8 @@ app.post('/',(req,res)=>{
         from: process.env.email,
         to:req.body.email,
         subject:'Venha Participar worldAmbit',
-        text:`entre nesse link para participar do nosso grupo do 
-        facebook: www.facebook.com
-        whatsapp:....
-        discord:.....`
+        text:`entre nesse link para participar do nosso grupo do
+        discord: https://discord.gg/7UFHVPA `
         
     };
     transporter.sendMail(mailOptions, function(error, info){

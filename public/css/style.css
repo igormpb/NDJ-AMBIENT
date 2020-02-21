@@ -12,6 +12,8 @@ body{
     height: 100vh;
     background-color: #afe686ee;
     font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    font-weight: bold;
 }
 
 /* header */
@@ -88,7 +90,7 @@ border-radius: 2px;
 /* footer */
 footer{
     margin-top:auto;
-    padding: 16px;
+    padding-top: 14px;
     border-top: 1px #1f6b29ee solid;
 }
 
