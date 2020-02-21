@@ -30,7 +30,7 @@ app.get('/',(req,res)=>{
 
 app.post('/',(req,res)=>{
     const mailOptions = {
-        from: "worldambitof@gmail.com",
+        from: process.env.email,
         to:req.body.email,
         subject:'Venha Participar worldAmbit',
         text:`entre nesse link para participar do nosso grupo do 
